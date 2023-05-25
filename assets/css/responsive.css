@@ -1,0 +1,35 @@
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .min-nav {
+        width: 280px;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background: #454545;
+        z-index: 11;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo_des ul {
+
+        justify-content: center;
+    }
+
+    .logo_des li {
+        margin: 10px 0;
+    }
+
+    .prod-tab .nav-item {
+        margin:   8px ;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-menu .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.8rem;
+        padding-left: 1.8rem;
+    }
+}
