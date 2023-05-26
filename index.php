@@ -315,13 +315,12 @@ include('templates/header.php') ?>
     <div class="d-flex-wrap my-4 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
             <div class="port-ses">
-                <a href="portfolio.php">
+               
                     <div class="port-img">
                         <img src="./assets/img/peacock.jpg" alt="peacock">
                     </div>
                     <div class="peac-conte">
                         <h5>Peacock Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
                     </div>
                 </a>
             </div>
@@ -334,7 +333,6 @@ include('templates/header.php') ?>
                     </div>
                     <div class="peac-conte">
                         <h5>Stone Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
                     </div>
                 </a>
             </div>
@@ -347,7 +345,6 @@ include('templates/header.php') ?>
                     </div>
                     <div class="peac-conte">
                         <h5>Silk Design</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
                     </div>
                 </a>
             </div>
@@ -365,8 +362,8 @@ include('templates/header.php') ?>
     </div>
     <div class="d-flex-wrap my-4 w-95 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/hal-aari.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">
@@ -385,8 +382,8 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/saree-arri.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">
@@ -405,8 +402,8 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/blog.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">
@@ -423,7 +420,7 @@ include('templates/header.php') ?>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 <!-- Our blog design end -->

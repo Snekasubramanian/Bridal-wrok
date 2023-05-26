@@ -283,3 +283,85 @@
  </div>
 
  <!-- modal end testimonial -->
+ <!-- product detail zoom -->
+ <script>
+     const parseHTML = htmlStr => {
+         const range = document.createRange()
+         range.selectNode(document.body)
+         return range.createContextualFragment(htmlStr)
+     }
+     const makeImgMagnifiable = img => {
+         const magnifierFragment = parseHTML(`
+    <div class="magnifier-container">
+      <div class="magnifier">
+        <img class="magnifier__img" src="${img.src}"/>
+      </div>
+    </div>
+  `)
+         img.parentElement.insertBefore(magnifierFragment, img)
+         const magnifierContainerEl = document.querySelector('.magnifier-container')
+         img.remove()
+         magnifierContainerEl.appendChild(img)
+         const magnifierEl = magnifierContainerEl.querySelector('.magnifier')
+         const magnifierImg = magnifierEl.querySelector('.magnifier__img')
+         const transform = {
+             translate: [0, 0],
+             scale: 1,
+         }
+
+         const setTransformStyle = (el, {
+             translate,
+             scale
+         }) => {
+             const [xPercent, yRawPercent] = translate
+             const yPercent = yRawPercent < 0 ? 0 : yRawPercent
+             const [xOffset, yOffset] = [
+                 `calc(-${xPercent}% + 250px)`,
+                 `calc(-${yPercent}% + 70px)`,
+             ]
+
+             el.style = `
+      transform: scale(${scale}) translate(${xOffset}, ${yOffset});
+    `
+         }
+         img.addEventListener('mousemove', event => {
+             const [mouseX, mouseY] = [event.pageX + 40, event.pageY - 20]
+             const {
+                 top,
+                 left,
+                 bottom,
+                 right
+             } = img.getBoundingClientRect()
+             transform.translate = [
+                 ((mouseX - left) / right) * 100,
+                 ((mouseY - top) / bottom) * 100,
+             ]
+             magnifierEl.style = `
+      display: block;
+      top: ${mouseY}px;
+      left: ${mouseX}px;
+    `
+             setTransformStyle(magnifierImg, transform)
+         })
+         img.addEventListener('wheel', event => {
+             event.preventDefault()
+             const scrollingUp = event.deltaY < 0
+             const {
+                 scale
+             } = transform
+             transform.scale = scrollingUp && scale < 3 ?
+                 scale + 0.1 :
+                 !scrollingUp && scale > 1 ?
+                 scale - 0.1 :
+                 scale
+             setTransformStyle(magnifierImg, transform)
+         })
+         img.addEventListener('mouseleave', () => {
+             magnifierEl.style = ''
+             magnifierImg.style = ''
+         })
+     }
+     const img = document.querySelector('.image-preview-js')
+     makeImgMagnifiable(img)
+ </script>
+ <!-- product detail zoom end -->

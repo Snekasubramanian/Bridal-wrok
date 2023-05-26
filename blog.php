@@ -7,14 +7,15 @@ include('templates/header.php') ?>
 </div>
 <!-- banner abouts end -->
 <!-- Our blog design -->
-<div class="  my-3">
+<div class="my-3">
     <div class="aari-title text-center">
         <h2>Our Latest Article</h2>
     </div>
+  
     <div class="d-flex-wrap my-4 w-95 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/hal-aari.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">
@@ -33,8 +34,8 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/saree-arri.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">
@@ -53,8 +54,8 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-ses">
-                <div class="port-img">
+            <div class="blog-ses">
+                <div class="blog-img">
                     <img src="./assets/img/blog.jpg" alt="peacock">
                 </div>
                 <div class="peac-conte">

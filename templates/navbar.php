@@ -68,7 +68,7 @@
                                             } ?>" aria-current="page" href="portfolio.php">Portfolio
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a href="product.php" class="dropdown-toggle nav-link  <?php if ($file_name == "product") {
                                                                 echo "active";
                                                             } ?>" aria-current="page" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
@@ -112,6 +112,12 @@
                             </li>
 
                         </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link  <?php if ($file_name == "product") {
+                                                echo "active";
+                                            } ?>" aria-current="page" href="product.php">Product
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  <?php if ($file_name == "testimonial") {
