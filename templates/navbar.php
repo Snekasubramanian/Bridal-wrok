@@ -69,17 +69,17 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link  <?php if ($file_name == "product") {
+                        <a href="product.php" class="dropdown-toggle nav-link  <?php if ($file_name == "product") {
                                                                 echo "active";
                                                             } ?>" aria-current="page" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
                             <li><a class="trigger right-caret">Blouse</a>
-                                <ul class="dropdown-menu sub-menu"> 
+                                <ul class="dropdown-menu sub-menu">
                                     <li>
                                         <a class="trigger right-caret">Bridal Work</a>
                                         <ul class="dropdown-menu sub-menu">
-                                            <li><a href="product.php">Bridal Work 1</a></li>
+                                            <li><a href="products.php">Bridal Work 1</a></li>
                                             <li><a href="#">Bridal Work 2</a></li>
                                             <li><a href="#">Bridal Work 3</a></li>
                                         </ul>
@@ -87,7 +87,7 @@
                                 </ul>
                             </li>
                             <li><a class="trigger right-caret">Saree</a>
-                                <ul class="dropdown-menu sub-menu"> 
+                                <ul class="dropdown-menu sub-menu">
                                     <li>
                                         <a class="trigger right-caret">Saree Work</a>
                                         <ul class="dropdown-menu sub-menu">
@@ -99,7 +99,7 @@
                                 </ul>
                             </li>
                             <li><a class="trigger right-caret">Salwars</a>
-                                <ul class="dropdown-menu sub-menu"> 
+                                <ul class="dropdown-menu sub-menu">
                                     <li>
                                         <a class="trigger right-caret">Bridal Work</a>
                                         <ul class="dropdown-menu sub-menu">
@@ -114,6 +114,12 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link  <?php if ($file_name == "testimonial") {
+                                                echo "active";
+                                            } ?>" aria-current="page" href="testimonial.php">Testimonial
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link  <?php if ($file_name == "blog") {
                                                 echo "active";
                                             } ?>" aria-current="page" href="blog.php">Our Blog
@@ -125,8 +131,13 @@
                                             } ?>" aria-current="page" href="contact.php">Contact Us
                         </a>
                     </li>
+
                 </ul>
-            </div>
+                <div class=" ">
+                    <a class="btnw-des"  href="login.php">LOGIN
+                    </a>
+                    
+                </div>
         </nav>
     </div>
 </div>

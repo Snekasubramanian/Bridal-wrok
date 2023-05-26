@@ -6,7 +6,7 @@
                  <ul>
                      <li><i class='bx bx-current-location'></i> <a href="" class="w-100">Shop No:9,Basement Floor,Arcot Road,Raahat Plaza,
                              Vadapalani, Chennai - 600026</a></li>
-                     <li><i class='bx bxs-phone-call'></i><a href="">+91-97911 71204</a>
+                     <li><i class='bx bxs-phone-call'></i><a href="tel:+919791171204">+91-97911 71204</a>
                          <br>
                          <a href="">+91-97911 71204</a>
                      </li>
@@ -211,41 +211,75 @@
  <div class="modal job-form" id="mymodal">
      <div class="modal-dialog modal-dialog-centered mo-di">
          <div class="modal-content ">
-             <h4>Enquiry Now</h4>
 
              <button data-bs-dismiss="modal" class="clse_btn">
                  <i class="fa-solid fa-xmark "></i>
              </button>
+             <div class="modal-body">
+                 <h4>Enquiry Now</h4>
+                 <form action="" method="post">
+                     <div class="my-2 px-3">
+                         <label for="name">Name</label>
+                         <input type="name" class="form-control" id="name" required placeholder="Enter Name" name="name" />
+                     </div>
+                     <div class="my-2 px-3">
+                         <label for="email">Email</label>
+                         <input type="email" class="form-control" id="email" class="form-control" required placeholder="Enter Email" name="email" />
+                     </div>
+                     <div class="my-2 px-3">
+                         <label for="">Phone</label>
+                         <input type="number" class="form-control" id="mobile" required placeholder="Enter Phone Number" name="mobile" pattern="[6-9]{1}[0-9]{9}" minlength="10" return false; />
 
-             <form action="" method="post">
-                 <div class="my-2 px-3">
-                     <label for="name">Name</label>
-                     <input type="name" class="form-control" id="name" required placeholder="Enter Name" name="name" />
-                 </div>
-                 <div class="my-2 px-3">
-                     <label for="email">Email</label>
-                     <input type="email" class="form-control" id="email" class="form-control" required placeholder="Enter Email" name="email" />
-                 </div>
-                 <div class="my-2 px-3">
-                     <label for="">Phone</label>
-                     <input type="number" class="form-control" id="mobile" required placeholder="Enter Phone Number" name="mobile" pattern="[6-9]{1}[0-9]{9}" minlength="10" return false; />
+                     </div>
+                     <div class="my-2 px-3">
+                         <label for="">Subject</label>
+                         <input type="text" class="form-control" id="subject" required placeholder="Enter Subject" />
 
-                 </div>
-                 <div class="my-2 px-3">
-                     <label for="">Subject</label>
-                     <input type="text" class="form-control" id="subject" required placeholder="Enter Subject" />
-
-                 </div>
-                 <div class="my-2 px-3">
-                     <label for="message">Message</label>
-                     <textarea class="form-control" placeholder="type here..." required name="message" rows="2" id="message"></textarea>
-                 </div>
-                 <div class="re_ser text-center py-2">
-                     <input class="btn-des" type="submit" name="submit" value="Submit">
-                 </div>
-             </form>
+                     </div>
+                     <div class="my-2 px-3">
+                         <label for="message">Message</label>
+                         <textarea class="form-control" placeholder="type here..." required name="message" rows="2" id="message"></textarea>
+                     </div>
+                     <div class="re_ser text-center py-2">
+                         <input class="btn-des" type="submit" name="submit" value="Submit">
+                     </div>
+                 </form>
+             </div>
          </div>
      </div>
  </div>
 
  <!-- modal ends -->
+ <!-- modal start testimonial -->
+ <div class="modal fade" id="testread">
+     <div class="modal-dialog modal-dialog-centered mo-di">
+         <div class="modal-content  ">
+             <button data-bs-dismiss="modal" class="clse_btn">
+                 <i class="fa-solid fa-xmark "></i>
+             </button>
+
+             <div class="modal-body modal-box">
+                 <div class="client-con">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
+                     <div class="img-client mt-5">
+                         <img src="./assets/img/testi.jpg" alt="client">
+                         <h6>Priya</h6>
+                         <div class="re-star  ">
+                             <i class="fa-solid fa-star "></i>
+                             <i class="fa-solid fa-star "></i>
+                             <i class="fa-solid fa-star "></i>
+                             <i class="fa-solid fa-star "></i>
+                             <i class="fa-solid fa-star "></i>
+                         </div>
+                         <p>Designer in ABC company</p>
+                     </div>
+                     <div class="bots-imgs">
+                         <img src="./assets/img/testimonial.png" alt="testimonial">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- modal end testimonial -->

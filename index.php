@@ -106,7 +106,7 @@ include('templates/header.php') ?>
                 <a class="nav-link" data-bs-toggle="pill" href="#half-saree">Half Saree</a>
             </li>
         </ul>
-        <div class="tab-content mt-5 mb-3 w-95 scrollspy-example"  data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"   tabindex="0">
+        <div class="tab-content mt-5 mb-3 w-95 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
             <div id="blose" class="tab-pane active">
                 <div class="d-flex-wrap">
                     <div class="col-md-4 col-12 px-3 my-2">
@@ -312,32 +312,44 @@ include('templates/header.php') ?>
     <div class="aari-title">
         <h2>Portfolio</h2>
     </div>
-    <div class="d-flex-wrap my-4">
+    <div class="d-flex-wrap my-4 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/peacock.jpg" alt="peacock">
-                <div class="peac-conte">
-                    <h5>Peacock Design</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
-                </div>
+            <div class="port-ses">
+                <a href="portfolio.php">
+                    <div class="port-img">
+                        <img src="./assets/img/peacock.jpg" alt="peacock">
+                    </div>
+                    <div class="peac-conte">
+                        <h5>Peacock Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/stone.jpg" alt="peacock">
-                <div class="peac-conte">
-                    <h5>Stone Design</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
-                </div>
+            <div class="port-ses">
+                <a href="portfolio.php">
+                    <div class="port-img">
+                        <img src="./assets/img/stone.jpg" alt="peacock">
+                    </div>
+                    <div class="peac-conte">
+                        <h5>Stone Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/skill.jpg" alt="peacock">
-                <div class="peac-conte">
-                    <h5>Silk Design</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
-                </div>
+            <div class="port-ses">
+                <a href="portfolio.php">
+                    <div class="port-img">
+                        <img src="./assets/img/skill.jpg" alt="peacock">
+                    </div>
+                    <div class="peac-conte">
+                        <h5>Silk Design</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut eligendi placeat mollitia, accusamus architecto. </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -351,10 +363,12 @@ include('templates/header.php') ?>
     <div class="aari-title text-center">
         <h2>Our Blog</h2>
     </div>
-    <div class="d-flex-wrap my-4 w-95">
+    <div class="d-flex-wrap my-4 w-95 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/hal-aari.jpg" alt="peacock">
+            <div class="port-ses">
+                <div class="port-img">
+                    <img src="./assets/img/hal-aari.jpg" alt="peacock">
+                </div>
                 <div class="peac-conte">
                     <div class="date-destign my-3">
                         <h6>23/05/2023</h6>
@@ -371,8 +385,10 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/saree-arri.jpg" alt="peacock">
+            <div class="port-ses">
+                <div class="port-img">
+                    <img src="./assets/img/saree-arri.jpg" alt="peacock">
+                </div>
                 <div class="peac-conte">
                     <div class="date-destign my-3">
                         <h6>23/05/2023</h6>
@@ -389,8 +405,10 @@ include('templates/header.php') ?>
             </div>
         </div>
         <div class="col-md-4 col-12 px-3 my-2">
-            <div class="port-img">
-                <img src="./assets/img/blog.jpg" alt="peacock">
+            <div class="port-ses">
+                <div class="port-img">
+                    <img src="./assets/img/blog.jpg" alt="peacock">
+                </div>
                 <div class="peac-conte">
                     <div class="date-destign my-3">
                         <h6>23/05/2023</h6>
@@ -418,9 +436,17 @@ include('templates/header.php') ?>
         <div class="col-md-4 col-12 px-3 my-2">
             <div class="client-con">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <div class="img-client mt-4">
+                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
+                <div class="img-client mt-3">
                     <img src="./assets/img/testi.jpg" alt="client">
                     <h6>Priya</h6>
+                    <div class="re-star  ">
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                    </div>
                     <p>Designer in ABC company</p>
                 </div>
                 <div class="bots-imgs">
@@ -431,9 +457,18 @@ include('templates/header.php') ?>
         <div class="col-md-4 col-12 px-3 my-2">
             <div class="client-con">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <div class="img-client mt-4">
+                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
+
+                <div class="img-client mt-3">
                     <img src="./assets/img/testi.jpg" alt="client">
                     <h6>Priya</h6>
+                    <div class="re-star  ">
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                    </div>
                     <p>Designer in ABC company</p>
                 </div>
                 <div class="bots-imgs">
@@ -444,9 +479,18 @@ include('templates/header.php') ?>
         <div class="col-md-4 col-12 px-3 my-2">
             <div class="client-con">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <div class="img-client mt-4">
+                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
+
+                <div class="img-client mt-3">
                     <img src="./assets/img/testi.jpg" alt="client">
                     <h6>Priya</h6>
+                    <div class="re-star  ">
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star "></i>
+                    </div>
                     <p>Designer in ABC company</p>
                 </div>
                 <div class="bots-imgs">

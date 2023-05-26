@@ -10,6 +10,15 @@
         z-index: 11;
         padding: 10px;
     }
+
+    .nav-menu .navbar-nav .nav-link:hover,
+    .nav-menu .navbar-nav .nav-link.active {
+        color: #6acfff !important;
+    }
+
+    .nav-link::before {
+        background: none !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -23,13 +32,20 @@
     }
 
     .prod-tab .nav-item {
-        margin:   8px ;
+        margin: 8px;
+    }
+}
+
+@media (min-width: 991px) {
+    .nav-menu .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 }
 
 @media (min-width: 768px) {
     .nav-menu .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: 1.8rem;
-        padding-left: 1.8rem;
+        padding-right: .7rem;
+        padding-left: .7rem;
     }
 }
