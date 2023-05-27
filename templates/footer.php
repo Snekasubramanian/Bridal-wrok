@@ -21,7 +21,7 @@
                      <li><a href="index.php">Home</a></li>
                      <li><a href="about.php">About Us</a></li>
                      <li><a href="portfolio.php">Portfolio</a></li>
-                     <li><a href="bus-rental-chennai.php">Bus Rental</a></li>
+                     <li><a href="testimonial.php">Testimonial</a></li>
                      <li><a href="blog.php">Our Blog</a></li>
                      <li><a href="contact.php">Contact Us</a></li>
                  </ul>
@@ -56,7 +56,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
  <!-- search -->
- <!-- <script>
+ <script>
      $(document).ready(function() {
 
          var $terms = [
@@ -168,7 +168,7 @@
          });
 
      });
- </script> -->
+ </script>
  <!-- search end -->
  <!-- image zooom -->
  <script>
@@ -183,29 +183,6 @@
      });
  </script>
  <!-- image zooom end -->
-
- <!-- navbar dropdown starts -->
- <script>
-     $(function() {
-         $(".dropdown-menu > li > a.trigger").on("click", function(e) {
-             var current = $(this).next();
-             var grandparent = $(this).parent().parent();
-             if ($(this).hasClass('left-caret') || $(this).hasClass('right-caret'))
-                 $(this).toggleClass('right-caret left-caret');
-             grandparent.find('.left-caret').not(this).toggleClass('right-caret left-caret');
-             grandparent.find(".sub-menu:visible").not(current).hide();
-             current.toggle();
-             e.stopPropagation();
-         });
-         $(".dropdown-menu > li > a:not(.trigger)").on("click", function() {
-             var root = $(this).closest('.dropdown');
-             root.find('.left-caret').toggleClass('right-caret left-caret');
-             root.find('.sub-menu:visible').hide();
-         });
-     });
- </script>
- <!-- navbar dropdown ends -->
-
  <!-- modal start -->
 
  <div class="modal job-form" id="mymodal">
@@ -285,83 +262,127 @@
  <!-- modal end testimonial -->
  <!-- product detail zoom -->
  <script>
-     const parseHTML = htmlStr => {
-         const range = document.createRange()
-         range.selectNode(document.body)
-         return range.createContextualFragment(htmlStr)
-     }
-     const makeImgMagnifiable = img => {
-         const magnifierFragment = parseHTML(`
-    <div class="magnifier-container">
-      <div class="magnifier">
-        <img class="magnifier__img" src="${img.src}"/>
-      </div>
-    </div>
-  `)
-         img.parentElement.insertBefore(magnifierFragment, img)
-         const magnifierContainerEl = document.querySelector('.magnifier-container')
-         img.remove()
-         magnifierContainerEl.appendChild(img)
-         const magnifierEl = magnifierContainerEl.querySelector('.magnifier')
-         const magnifierImg = magnifierEl.querySelector('.magnifier__img')
-         const transform = {
-             translate: [0, 0],
-             scale: 1,
-         }
-
-         const setTransformStyle = (el, {
-             translate,
-             scale
-         }) => {
-             const [xPercent, yRawPercent] = translate
-             const yPercent = yRawPercent < 0 ? 0 : yRawPercent
-             const [xOffset, yOffset] = [
-                 `calc(-${xPercent}% + 250px)`,
-                 `calc(-${yPercent}% + 70px)`,
-             ]
-
-             el.style = `
-      transform: scale(${scale}) translate(${xOffset}, ${yOffset});
-    `
-         }
-         img.addEventListener('mousemove', event => {
-             const [mouseX, mouseY] = [event.pageX + 40, event.pageY - 20]
-             const {
-                 top,
-                 left,
-                 bottom,
-                 right
-             } = img.getBoundingClientRect()
-             transform.translate = [
-                 ((mouseX - left) / right) * 100,
-                 ((mouseY - top) / bottom) * 100,
-             ]
-             magnifierEl.style = `
-      display: block;
-      top: ${mouseY}px;
-      left: ${mouseX}px;
-    `
-             setTransformStyle(magnifierImg, transform)
+     $('.product-img--main')
+         .on('mouseover', function() {
+             $(this).children('.product-img--main__image').css({
+                 'transform': 'scale(' + $(this).attr('data-scale') + ')'
+             });
          })
-         img.addEventListener('wheel', event => {
-             event.preventDefault()
-             const scrollingUp = event.deltaY < 0
-             const {
-                 scale
-             } = transform
-             transform.scale = scrollingUp && scale < 3 ?
-                 scale + 0.1 :
-                 !scrollingUp && scale > 1 ?
-                 scale - 0.1 :
-                 scale
-             setTransformStyle(magnifierImg, transform)
+         .on('mouseout', function() {
+             $(this).children('.product-img--main__image').css({
+                 'transform': 'scale(1)'
+             });
          })
-         img.addEventListener('mouseleave', () => {
-             magnifierEl.style = ''
-             magnifierImg.style = ''
+         .on('mousemove', function(e) {
+             $(this).children('.product-img--main__image').css({
+                 'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%'
+             });
          })
-     }
-     const img = document.querySelector('.image-preview-js')
-     makeImgMagnifiable(img)
+         // tiles set up
+         .each(function() {
+             $(this)
+                 .append('<div class="product-img--main__image"></div>')
+                 .children('.product-img--main__image').css({
+                     'background-image': 'url(' + $(this).attr('data-image') + ')'
+                 });
+         });
  </script>
  <!-- product detail zoom end -->
+
+ <!-- scroll down  -->
+
+ <script>
+     $('.right-bar li').on('click', 'a[href^="#"]', function(e) {
+         var id = $(this).attr('href');
+         var $id = $(id);
+         if ($id.length === 0) {
+             return;
+         }
+
+         e.preventDefault();
+         var pos = $id.offset().top;
+         $('body, html').animate({
+             scrollTop: pos
+         }, 100);
+     });
+
+     $(document).ready(
+         function() {
+             var bh = $('.right-bar').height();
+             $('.holder').height;
+         });
+
+     $(window).scroll(function() {
+
+
+         var scrollpos = $(window).scrollTop();
+         $('.holder').each(function(i) {
+             if ($(this).position().top <= scrollpos + 5) {
+                 $('.right-bar li a.act').removeClass('act');
+                 $('.right-bar li a').eq(i).addClass('act');
+                 var viewportheight = $('.right-bar').height();
+                 var licount = $(".right-bar li").length;
+                 $('.right-bar').animate({
+                     scrollTop: scrollpos / licount
+                 }, 0);
+
+             }
+
+         });
+
+     }).scroll();
+ </script>
+ <!-- scroll down  end -->
+ <!-- read more -->
+ <script>
+     $('.read-more').click(function() {
+         $('.read-more-content').slideToggle();
+         if (($('.read-more').text()) == "View more") {
+             $(this).text("View less");
+         } else {
+             $(this).text("View more");
+         }
+     });
+ </script>
+ <!-- read less end -->
+
+ <!-- rating design -->
+
+ <script>
+     function myFunction() {
+         if (document.getElementById('add-review')) {
+
+             if (document.getElementById('add-review').style.display == 'none') {
+                 document.getElementById('add-review').style.display = 'block';
+                 document.getElementById('enq-review').style.display = 'none';
+             } else {
+                 document.getElementById('add-review').style.display = 'none';
+                 document.getElementById('enq-review').style.display = 'block';
+             }
+         }
+     }
+ </script>
+ <!-- rating design end -->
+ <!-- testimonial -->
+ <script>
+     $('.testim-carousel').owlCarousel({
+         loop: true,
+         margin: 30,
+         nav: true,
+         autoplay: true,
+         autoplayTimeout: 2000,
+         autoplayHoverPause: true,
+         responsive: {
+             0: {
+                 items: 1
+             },
+             600: {
+                 items: 1
+             },
+             1000: {
+                 items: 1
+             }
+         }
+     })
+ </script>
+ <!-- testimonial end -->

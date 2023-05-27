@@ -315,13 +315,13 @@ include('templates/header.php') ?>
     <div class="d-flex-wrap my-4 pott-design">
         <div class="col-md-4 col-12 px-3 my-2">
             <div class="port-ses">
-               
-                    <div class="port-img">
-                        <img src="./assets/img/peacock.jpg" alt="peacock">
-                    </div>
-                    <div class="peac-conte">
-                        <h5>Peacock Design</h5>
-                    </div>
+
+                <div class="port-img">
+                    <img src="./assets/img/peacock.jpg" alt="peacock">
+                </div>
+                <div class="peac-conte">
+                    <h5>Peacock Design</h5>
+                </div>
                 </a>
             </div>
         </div>
@@ -420,78 +420,60 @@ include('templates/header.php') ?>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </div>
 <!-- Our blog design end -->
 <!-- our client says start  -->
-<div class="our-client my-3">
+<div class="our-client my-3 w-90">
     <div class="aari-title text-center">
         <h2>Our client Says</h2>
     </div>
-    <div class="d-flex-wrap my-4 w-95">
-        <div class="col-md-4 col-12 px-3 my-2">
-            <div class="client-con">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
-                <div class="img-client mt-3">
-                    <img src="./assets/img/testi.jpg" alt="client">
-                    <h6>Priya</h6>
-                    <div class="re-star  ">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
+    <div class="owl-carousel owl-theme testim-carousel my-4">
+        <div class="item">
+            <div class="text-monal">
+                <div class="d-flex-al">
+                    <div class="col-md-5 col-12  ">
+                        <div class="text-img">
+                            <img src="./assets/img/testi.jpg " alt="client">
+                        </div>
+
                     </div>
-                    <p>Designer in ABC company</p>
-                </div>
-                <div class="bots-imgs">
-                    <img src="./assets/img/testimonial.png" alt="testimonial">
+                    <div class="col-md-7 col-12  px-4 my-3">
+                        <div class="text-details">
+                            <h6>
+                                <i class="fa-solid fa-quote-left"></i>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
+                            <div class="img-client mt-3">
+                                <h5>Priya</h5>
+                                <div class="re-star  my-3">
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                                <p>Designer in ABC company</p>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-12 px-3 my-2">
-            <div class="client-con">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
+        <div class="item">
+            <div class="text-monal">
+                <div class="d-flex-al">
+                    <div class="col-12 p-3">
+                        <div class="text-img">
+                            <iframe width="100%" height="430" src="https://www.youtube.com/embed/xFCHhKgjYi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
 
-                <div class="img-client mt-3">
-                    <img src="./assets/img/testi.jpg" alt="client">
-                    <h6>Priya</h6>
-                    <div class="re-star  ">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
                     </div>
-                    <p>Designer in ABC company</p>
-                </div>
-                <div class="bots-imgs">
-                    <img src="./assets/img/testimonial.png" alt="testimonial">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-12 px-3 my-2">
-            <div class="client-con">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum sapiente impedit eum minima exercitationem ducimus vero odio hic molestiae deleniti nam et reiciendis recusandae, dolore at? Hic, nulla voluptas.</p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#testread" class="  my-2">Read More</a>
 
-                <div class="img-client mt-3">
-                    <img src="./assets/img/testi.jpg" alt="client">
-                    <h6>Priya</h6>
-                    <div class="re-star  ">
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                        <i class="fa-solid fa-star "></i>
-                    </div>
-                    <p>Designer in ABC company</p>
-                </div>
-                <div class="bots-imgs">
-                    <img src="./assets/img/testimonial.png" alt="testimonial">
                 </div>
             </div>
         </div>

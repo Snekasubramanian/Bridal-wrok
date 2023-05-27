@@ -12,7 +12,7 @@ include('templates/header.php') ?>
         <div class="post-sticky">
             <div class="sidebar-blog">
                 <h4>Product Categories</h4>
-                <ul class="nav nav-pills flex-column " role="tablist" id="list-example">
+                <ul class="right-bar nav nav-pills flex-column " role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="pill" href="#blose">
                             Blouse<img src="./assets/img/needle.png" alt="needle"></a>
@@ -32,7 +32,7 @@ include('templates/header.php') ?>
         </div>
     </div>
     <div class="col-md-8 col-12 px-3 my-2">
-        <div class="tab-content   scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
+        <div class="tab-content">
             <div id="blose" class="tab-pane active">
                 <div class="title-design">
                     <h2>Blouse design</h2>
