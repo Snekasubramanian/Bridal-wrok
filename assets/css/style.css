@@ -363,10 +363,8 @@ ul {
     padding: 3px 15px;
     font-size: 17px;
     border: none;
-    background: var(--white);
     cursor: pointer;
     border-radius: 5px;
-    font-family: "f3";
 }
 
 /* search */
@@ -375,6 +373,7 @@ ul {
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
+    position: relative;
 }
 
 #searchform span {
@@ -1364,3 +1363,34 @@ ul {
 }
 
 /* login-img */
+/* modal search */
+.modal .modal-frame {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    height: 40%;
+}
+
+.modal-sear {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: #1d1d1d !important;
+    height: 100%;
+}
+
+.modal-box .form-control {
+    background-color: #ffffff63;
+    color: var(--white);
+}
+
+.modal-box i {
+    color: var(--white);
+}
+
+.modal-box .form-control:focus {
+    color: var(--white);
+    background-color: #ffffff94;
+}
+
+/* modal search  */

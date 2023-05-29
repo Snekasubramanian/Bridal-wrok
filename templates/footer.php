@@ -260,6 +260,33 @@
  </div>
 
  <!-- modal end testimonial -->
+ <!-- search testimonial -->
+ <div class="modal fade" id="search-top">
+     <div class="modal-dialog modal-frame ">
+         <div class="modal-content modal-sear ">
+             <button data-bs-dismiss="modal" class="clse_btn">
+                 <i class="fa-solid fa-xmark "></i>
+             </button>
+
+             <div class="modal-body modal-box d-flex-al-jc">
+                 <div class="search-container p-4 col-md-6 col-10">
+                     <form action="">
+                         <div id="searchform">
+                             <input type="text" id="search-bar" autocomplete="off" type="text" class="form-control" placeholder="Search here" />
+                             <ul class="output" style="display: none"></ul>
+                             <button class="btn-sea  " type="submit">
+                                 <i class="fa fa-search"></i>
+                             </button>
+
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- search end testimonial -->
  <!-- product detail zoom -->
  <script>
      $('.product-img--main')

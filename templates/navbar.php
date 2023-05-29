@@ -26,6 +26,17 @@
             <li>
                 <div class="search-container">
                     <form action="">
+                        <a href=" " data-bs-toggle="modal" data-bs-target="#search-top">
+                            <input type="text" type="text" class="form-control" placeholder="Search here" />
+                            <button class="btn-sea" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </a>
+
+                    </form>
+                </div>
+                <!-- <div class="search-container">
+                    <form action="">
                         <div id="searchform">
                             <input type="text" id="search-bar" autocomplete="off" type="text" class="form-control" placeholder="Search here" />
                             <ul class="output" style="display: none"></ul>
@@ -35,7 +46,7 @@
 
                         </div>
                     </form>
-                </div>
+                </div> -->
             </li>
         </ul>
 
@@ -70,8 +81,8 @@
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a href="product.php" class="dropdown-toggle nav-link  <?php if ($file_name == "product") {
-                                                                echo "active";
-                                                            } ?>" aria-current="page" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+                                                                                    echo "active";
+                                                                                } ?>" aria-current="page" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
                             <li><a class="trigger right-caret">Blouse</a>
@@ -140,9 +151,9 @@
 
                 </ul>
                 <div class=" ">
-                    <a class="btnw-des"  href="login.php">LOGIN
+                    <a class="btnw-des" href="login.php">LOGIN
                     </a>
-                    
+
                 </div>
         </nav>
     </div>
