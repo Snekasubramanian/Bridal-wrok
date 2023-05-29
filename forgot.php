@@ -32,7 +32,4 @@ include('templates/header.php') ?>
 
 
 </div>
-
-<div class="d-none">
-    <?php include('templates/footer.php') ?>
-</div>
+ 

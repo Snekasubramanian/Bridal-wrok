@@ -228,6 +228,10 @@ ul {
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
 }
 
+.search-container .form-control {
+    border: 1px solid #000 !important;
+}
+
 /* form design end */
 /* navbar design */
 .nav-menu .top-bar {
@@ -1356,6 +1360,11 @@ ul {
     color: #fff;
 }
 
+.backg-login .form-control:focus {
+    background-color: #19191973;
+    color: #fff;
+}
+
 .backg-login .btnw-des {
     width: 100%;
     display: inline-block;
@@ -1371,6 +1380,14 @@ ul {
 .logo-img img {
     width: 100px;
     height: auto;
+}
+
+.footer-design {
+    display: none;
+}
+
+.backg-login h6 {
+    color: var(--white);
 }
 
 /* login-img */

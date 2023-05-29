@@ -26,7 +26,7 @@ include('templates/header.php') ?>
                     <i class="fa-solid fa-star "></i>
                     <i class="fa-solid fa-star "></i>
                     <i class="fa-solid fa-star "></i>
-                    <p>4.5 rating</p>
+                    <p>4.5/5 rating</p>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius voluptatem sit pariatur, expedita magni laboriosam, excepturi nemo totam cum quae vero minima molestias sint perspiciatis aliquam laudantium. Eaque, amet.</p>
                 <div class="review-design">
@@ -69,7 +69,7 @@ include('templates/header.php') ?>
                                             <div class="res-star d-flex-al my-2">
                                                 <h5> Priya Dharshani
                                                 </h5>
-                                                <h6><i class="fa-solid fa-star "></i>4.5 </h6>
+                                                <h6><i class="fa-solid fa-star "></i>4.5/5 </h6>
                                             </div>
                                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum minus, consequatur asperiores dolorum voluptate! Quam illum corrupti numquam dignissimos iure quis magni, asperiores qui impedit deleniti laborum possimus voluptate!</p>
                                         </div>
@@ -77,7 +77,7 @@ include('templates/header.php') ?>
                                             <div class="res-star d-flex-al my-2">
                                                 <h5> Priya Dharshani
                                                 </h5>
-                                                <h6><i class="fa-solid fa-star "></i>4.5 </h6>
+                                                <h6><i class="fa-solid fa-star "></i>4.5/5 </h6>
                                             </div>
                                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum minus, consequatur </p>
                                         </div>
@@ -87,7 +87,7 @@ include('templates/header.php') ?>
                                             <div class="res-star d-flex-al my-2">
                                                 <h5> Dharshani
                                                 </h5>
-                                                <h6><i class="fa-solid fa-star "></i>5 </h6>
+                                                <h6><i class="fa-solid fa-star "></i>5/5 </h6>
                                             </div>
                                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum minus, consequatur asperiores dolorum voluptate! Quam illum corrupti numquam dignissimos iure quis magni, asperiores qui impedit deleniti laborum possimus voluptate!</p>
                                         </div>
@@ -95,7 +95,7 @@ include('templates/header.php') ?>
                                             <div class="res-star d-flex-al my-2">
                                                 <h5> Priya Dharshani
                                                 </h5>
-                                                <h6><i class="fa-solid fa-star "></i>4.5 </h6>
+                                                <h6><i class="fa-solid fa-star "></i>4.5/5 </h6>
                                             </div>
                                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum minus, consequatur </p>
                                         </div>
