@@ -878,6 +878,10 @@ ul {
     height: 50vh;
 }
 
+.about-pages {
+    display: none;
+}
+
 .about-pages h2 {
     text-shadow: 0 3px 5px #5e131a70;
 }
@@ -1129,8 +1133,15 @@ ul {
     color: var(--black);
 }
 
-.sare-img .prod-text a i {
-    margin: 0 5px;
+.sare-img .prod-text .what-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sare-img .prod-text a img {
+    width: 18px;
+    margin: 0 2px;
 }
 
 .sare-img .btn-des {
@@ -1394,3 +1405,63 @@ ul {
 }
 
 /* modal search  */
+
+/* Float icon */
+
+.social_icon {
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    z-index: 111;
+}
+
+.social_icon ul .en_quiry {
+    font-size: 15px;
+    background: linear-gradient(#6acfff, #2196F3);
+    border-radius: 0px 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    position: absolute;
+    bottom: 230px;
+    left: 0;
+    justify-content: center;
+}
+
+.social_icon ul .wh_at {
+    font-size: 15px;
+    background: linear-gradient(317deg, #095200, #76ff4a);
+    border-radius: 0px 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    position: absolute;
+    bottom: 175px;
+    left: 0;
+    justify-content: center;
+}
+
+.social_icon ul .wh_at {
+    font-size: 22px;
+}
+
+.social_icon ul .call {
+    font-size: 15px;
+    background: linear-gradient(317deg, #5e121a, #ef3f52);
+    border-radius: 0px 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    justify-content: center;
+}
+
+/* Float icon end */

@@ -21,12 +21,14 @@ include('templates/header.php') ?>
                     <div class="prod-text">
                         <h4>Peacock Bridal Work</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius voluptatem sit pariatur, expedita magni laboriosam, excepturi nemo totam cum quae vero minima molestias sint perspiciatis aliquam laudantium. Eaque, amet.</p>
-                        <div class="d-flex-al-jc justify-content-lg-between  my-3">
+                        <div class="d-flex-al-jc justify-content-lg-between  my-3 what-icon ">
                             <div class="mx-1">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn-des">Enquiry Now</a>
                             </div>
                             <div class="mx-1">
-                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whats app</a>
+                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank">
+                                    <img src="./assets/img/whatsapp.png" alt="whatsapp">
+                                    Whats app</a>
                             </div>
                         </div>
                     </div>
@@ -42,12 +44,12 @@ include('templates/header.php') ?>
                     <div class="prod-text">
                         <h4>Peacock Bridal Work</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius voluptatem sit pariatur, expedita magni laboriosam, excepturi nemo totam cum quae vero minima molestias sint perspiciatis aliquam laudantium. Eaque, amet.</p>
-                        <div class="d-flex-al-jc justify-content-lg-between  my-3">
+                        <div class="d-flex-al-jc justify-content-lg-between  my-3 what-icon">
                             <div class="mx-1">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn-des">Enquiry Now</a>
                             </div>
                             <div class="mx-1">
-                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whats app</a>
+                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank"> <img src="./assets/img/whatsapp.png" alt="whatsapp">Whats app</a>
                             </div>
                         </div>
                     </div>
@@ -63,12 +65,12 @@ include('templates/header.php') ?>
                     <div class="prod-text">
                         <h4>Peacock Bridal Work</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius voluptatem sit pariatur, expedita magni laboriosam, excepturi nemo totam cum quae vero minima molestias sint perspiciatis aliquam laudantium. Eaque, amet.</p>
-                        <div class="d-flex-al-jc justify-content-lg-between  my-3">
+                        <div class="d-flex-al-jc justify-content-lg-between  my-3 what-icon">
                             <div class="mx-1">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#mymodal" class="btn-des">Enquiry Now</a>
                             </div>
                             <div class="mx-1">
-                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whats app</a>
+                                <a href="https://api.whatsapp.com/send?phone=+919884092808&text=Hi%20Sir.%2C%20" class="btn-bor" target="_blank"> <img src="./assets/img/whatsapp.png" alt="whatsapp">Whats app</a>
                             </div>
                         </div>
                     </div>
