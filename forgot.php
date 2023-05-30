@@ -2,7 +2,7 @@
 include('templates/header.php') ?>
 <div class="login-page  ">
     <div class="login-ses d-flex-al-jc">
-        <div class="col-md-4 col-12">
+        <div class="col-lg-4 col-md-6 col-12">
             <div class="backg-login">
                 <div class="logo-img mb-3">
                     <a href="index.php"><img src="./assets/img/logow.png" alt=""></a>
